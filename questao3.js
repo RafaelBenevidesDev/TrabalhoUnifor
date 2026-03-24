@@ -70,7 +70,7 @@ let descFormatado = valorDesconto.toFixed(2);
 let total = (subTotal - valorDesconto);
 let totalFormatado = total.toFixed(2)
 
-total < 100? console.log("PAGAMENTO À VISTA") : "PARCELÁVEL EM ATÉ 3X SEM JUROS";
+total < 100? console.log("PAGAMENTO À VISTA") : console.log("PARCELÁVEL EM ATÉ 3X SEM JUROS");
 
 switch (true) {
   case (total == 0):
@@ -90,4 +90,4 @@ switch (true) {
     break;
 }
 
-console.log(nomePassageiro, `Categoria: ${categoria};`, `Destino: ${destino};`, `Subtotal: R$${subTotal};`, `Valor desconto: R$${valorDesconto};`, `Total à pagar: R$${total};`);
+console.log(nomePassageiro, `Categoria: ${categoria};`, `Destino: ${destino};`, `Subtotal: R$${subFormatado};`, `Valor desconto: R$${descFormatado};`, `Total à pagar: R$${totalFormatado};`);
